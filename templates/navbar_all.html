@@ -1,0 +1,51 @@
+{% load static %}
+<header>
+    <div class="nav container">
+
+        <a onMouseOver="removePopup()" href="{% url 'home' %}" class="site-logo" aria-label="homepage"><img
+                src="{% static '/logo/Black logo.svg' %}" alt="Tourist Guide Logo" /></a>
+        <nav class="main-nav">
+            <fieldset class="search-field">
+                <div class="searchMain">
+                    <label for="searchFood">What:</label>
+                    <input type="text" name="" id="searchFood" placeholder="Ex: Famous Food, Famous Place, Way Path" />
+                </div>
+                <div class="search-bar-hr">
+                    <p>|</p>
+                </div>
+                <div class="search-location">
+                    <label for="searchLocation">Where:</label>
+                    <input type="text" name="" placeholder="Location" id="searchLocation" />
+                </div>
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </fieldset>
+        </nav>
+        <nav class="account" onMouseOver="removePopup()">
+            <ul class="nav__list">
+                <li class="nav__list-item" onMouseOver="removePopup()">
+                    <a href="{% url 'home' %}" class="nav__link">Home</a>
+                </li>
+
+                {% if request.user.is_authenticated %}
+                <li class="nav__list-item" onMouseOver="removePopup()">
+                    <a href="{% url 'profile' %}" class="nav__link">{{request.user|title}}</a>
+                </li>
+                <li class="nav__list-item" onMouseOver="removePopup()">
+                    <a href="{% url 'logout' %}" class="nav__link">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav__list-item" onMouseOver="removePopup()">
+                    <a href="{% url 'signin' %}" class="nav__link">Sign In</a>
+                </li>
+                <div class="dropdown" onMouseOver="handlePopup()">
+                    <li class="nav__list-item active">
+                        <a href="{% url 'registration' %}" class="nav__link">Register</i></a>
+                    </li>
+                </div>
+                {% endif %}
+
+
+            </ul>
+        </nav>
+    </div>
+</header>

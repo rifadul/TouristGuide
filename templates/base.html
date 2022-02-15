@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon   -->
+    <link rel="shortcut icon" href="{% static '\favicon\favicon.svg' %}" type="image/x-icon" />
+    <!-- font Awesome -->
+    <script src="https://kit.fontawesome.com/7e1812adc5.js" crossorigin="anonymous"></script>
+    {% block custom_css %}
+
+    {% endblock custom_css %}
+    <title>
+        {% block title %}
+
+        {% endblock title %}- Tourist Guide
+    </title>
+
+
+</head>
+
+<body>
+    <!--Main Layout-->
+    {% block navbar %}
+
+    {% endblock navbar %}
+    <main>
+        {% block main_content %}
+
+
+        {% endblock main_content %}
+    </main>
+    <!--Main Layout end-->
+
+    {% include "footer.html" %}
+    {% block custom_javascripts %}
+
+    {% endblock custom_javascripts %}
+
+</body>
+
+</html>

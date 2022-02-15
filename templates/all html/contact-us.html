@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Tourist Guide</title>
+    <!-- Favicon   -->
+    <link
+      rel="shortcut icon"
+      href="./favicon/facicon.svg"
+      type="image/x-icon"
+    />
+    <!-- font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/7e1812adc5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- StyleSheet - -->
+    <link rel="stylesheet" href="./StyleSheet/contact-us.css" />
+  </head>
+  <body>
+    <header >
+      <div class="nav container">
+        <a
+          onMouseOver="removePopup()"
+          href="#"
+          class="site-logo"
+          aria-label="homepage"
+          ><img src="./logo/Black logo.svg" alt="Tourist Guide Logo"
+        /></a>
+        <nav class="main-nav">
+          <ul class="nav__list">
+            <li class="nav__list-item" onMouseOver="removePopup()">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list-item" onMouseOver="removePopup()">
+              <a href="#" class="nav__link">Destination</a>
+            </li>
+            <div class="dropdown" onMouseOver="handlePopup()">
+              <li class="nav__list-item">
+                <a href="#" class="nav__link dropdown-main"
+                  >Pages <i class="fas fa-chevron-down"></i
+                ></a>
+              </li>
+              <div class="drop">
+                <ul class="dropdown-menu nav__list">
+                  <a class="nav__link" href="">Guide</a>
+                  <a class="nav__link" href="">Gallery</a>
+                  <a class="nav__link" href="">Create Event</a>
+                  <a class="nav__link" href="">Contact Us</a>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </nav>
+        <nav class="account" onMouseOver="removePopup()">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link nav__link--btn" href="#">Login</a>
+            </li>
+            <li class="nav__list-item">
+              <a
+                class="nav__link nav__link--btn nav__link--btn--highlight"
+                href="#"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main onMouseOver="removePopup()"  class="container">
+      <section class="home-intro"></section>
+      <section class="contact-us">
+        <div class="get-in-touch">
+          <article class="article-container">
+            <h1>Get in Touch</h1>
+            <p class="info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+              adipiscing proin velit vitae tincidunt. Vestibulum consectetur
+              nibh commodo amet diam nibh. Quisque phasellus elit enim senectus.
+              Faucibus commodo tortor, volutpat in hac pulvinar sollicitudin.
+              Enim vitae quam ultrices turpis ornare fringilla mus habitasse.
+            </p>
+            <div class="contact">
+              <p>
+                <i class="far fa-envelope-open"></i
+                ><a href="touristguide@gmail.com">touristguide@gmail.com</a>
+              </p>
+              <p><i class="fas fa-mobile-alt"></i> 01865748726</p>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Dattapara, Ashulia, Savar,
+                Dhaka
+              </p>
+            </div>
+          </article>
+          <div class="contact-form">
+            <article>
+              <div>
+                <h1>Say Something</h1>
+                <div class="form-input">
+                  <form action="">
+                    <input
+                      type="text"
+                      id="fname"
+                      name="your_name"
+                      placeholder="Your name"
+                      required
+                    />
+                    <input
+                      type="email"
+                      id="lname"
+                      name="your_email"
+                      placeholder="Email"
+                      required
+                    />
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </form>
+                  <button class="btn-send"><a href="#">SEND</a></button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div></div>
+        </div>
+      </section>
+    </main>
+    <footer onMouseOver="removePopup()">
+      <div class="footer-container">
+        <div class="footer-half-container">
+          <div class="footer-logo">
+            <a href="#"
+              ><img class="footer-logo" src="./logo/White Logo.svg" alt=""
+            /></a>
+          </div>
+          <article>
+            <p class="footer-article">
+              We earned a reputation of being good at what we do. Let us take
+              your online shop to new dimension in success!
+            </p>
+            <div class="footer-location">
+              <p>
+                <i class="fas fa-map-marker-alt"></i>Ashulia, Dhaka, Bnagladesh
+                1400
+              </p>
+              <p>
+                <a href="touristguide@gmail.com"
+                  ><i class="far fa-envelope-open"></i
+                    ></i>touristguide@gmail.com</a
+                >
+              </p>
+              <p>
+                <a href="+8801865748726"
+                  ><i class="fas fa-mobile-alt"></i>+88 01865748726</a
+                >
+              </p>
+            </div>
+            <div class="footer-social-icon">
+              <a href="#"><i class="fab fa-facebook" id="active"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </article>
+        </div>
+        <div class="footer-half-container">
+          <div class="receive-update">
+            <h1>RECEIVE EMAIL UPDATES</h1>
+            <div>
+                <input type="email" placeholder="Your Email Address" required />
+            <a href="#">Join</a>
+            </div>
+          </div>
+    <div class="footer-link">
+        <div class="touristguide-link">
+            <h3>Tourist Guide</h3>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Create Event</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="help-link">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Terms and conditions</a></li>
+              <li><a href="">Chat with ToursitGuide</a></li>
+              <li><a href="">How To Use</a></li>
+            </ul>
+          </div>
+          <div class="about-us">
+            <h3>About</h3>
+            <ul>
+              <li><a href="">Share History</a></li>
+              <li><a href="">Profile</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+    </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">
+        Copyright © 2020 . <a href="#">Tourist Guide</a> All rights reserved
+      </p>
+    </footer>
+    <script src="./Js/nav.js"></script>
+  </body>
+</html>
